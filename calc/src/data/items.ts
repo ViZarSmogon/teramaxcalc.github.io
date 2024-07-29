@@ -492,6 +492,7 @@ const SV = SS.concat([
   'Syrupy Apple',
   'Unremarkable Teacup',
   'Wellspring Mask',
+  'Wishing Stone',
 ]);
 
 const BERRIES: {[berry: string]: {t: I.TypeName; p: number}} = {

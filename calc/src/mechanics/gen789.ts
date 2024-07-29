@@ -1008,7 +1008,8 @@ export function calculateBPModsSMSSSV(
     (defender.name.includes('Ogerpon-Cornerstone') && defender.hasItem('Cornerstone Mask')) ||
     (defender.name.includes('Ogerpon-Hearthflame') && defender.hasItem('Hearthflame Mask')) ||
     (defender.name.includes('Ogerpon-Wellspring') && defender.hasItem('Wellspring Mask')) ||
-    (defender.named('Venomicon-Epilogue') && defender.hasItem('Vile Vial'));
+    (defender.named('Venomicon-Epilogue') && defender.hasItem('Vile Vial')) ||
+	defender.hasItem('Wishing Stone');
 
   // The last case only applies when the Pokemon has the Mega Stone that matches its species
   // (or when it's already a Mega-Evolution)
