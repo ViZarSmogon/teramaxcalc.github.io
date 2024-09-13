@@ -3097,7 +3097,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     maxPower: 1,
   },
   'G-Max Fireball': {
-    bp: 150,
+    bp: 90,
     type: 'Fire',
     category: 'Physical',
     isMax: true,
@@ -3197,7 +3197,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     maxPower: 1,
   },
   'G-Max Snooze': {
-    bp: 110,
+    bp: 50,
     type: 'Dark',
     category: 'Physical',
     isMax: true,

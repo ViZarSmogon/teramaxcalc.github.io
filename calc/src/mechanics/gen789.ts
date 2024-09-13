@@ -160,7 +160,7 @@ export function calculateSMSSSV(
   const attackerIgnoresAbility = attacker.hasAbility('Mold Breaker', 'Teravolt', 'Turboblaze');
   const moveIgnoresAbility = move.named(
     'G-Max Drum Solo',
-    'G-Max Fire Ball',
+    //'G-Max Fire Ball',
     'G-Max Hydrosnipe',
     'Light That Burns the Sky',
     'Menacing Moonraze Maelstrom',
@@ -753,6 +753,7 @@ export function calculateBasePowerSMSSSV(
     desc.moveBP = basePower;
     break;
   case 'Pursuit':
+  case 'G-Max Snooze':
     const switching = field.defenderSide.isSwitching === 'out';
     basePower = move.bp * (switching ? 2 : 1);
     if (switching) desc.isSwitching = 'out';
@@ -1358,7 +1359,7 @@ export function calculateAtModsSMSSSV(
     atMods.push(8192);
     desc.attackerAbility = attacker.ability;
   } else if (
-    (attacker.hasAbility('Water Bubble') && move.hasType('Water')) ||
+    (attacker.hasAbility('Water Bubble') && move.hasType('Water')) || (attacker.hasAbility('Steam Engine') && move.hasType('Fire')) ||
     (attacker.hasAbility('Huge Power', 'Pure Power') && move.category === 'Physical')
   ) {
     atMods.push(8192);
